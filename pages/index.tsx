@@ -1,6 +1,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 
 const Home: NextPage = () => {
@@ -59,7 +60,15 @@ const Home: NextPage = () => {
         <span className={styles.lightblue}>{'['}</span>
       </h1>
 
-      {/*  PROJECTS COMPONENT */}
+      {/*  PROJECTS PAGES */}
+      <div className={styles.projectcontainer}>
+        <h1>
+          <Link href="../projects/sorting">
+          <a>Sorting visualization,</a>
+          </Link>
+          
+        </h1>
+      </div>
 
       <h1 className={styles.lightblue}>{']'}</h1>
 
